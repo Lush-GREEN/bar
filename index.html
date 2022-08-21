@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>吱嗷赵</title>
+    <!--时间动画-->
+    <style>
+      #shijian {
+        width: 920px;
+        margin: 15px auto;
+      }
+
+      /*gif图片圆形*/
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 170px;
+        height: 170px;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        /*背景颜色渐变*/
+        background-image: linear-gradient(
+          rgb(238, 238, 243),
+          rgb(188, 188, 202),
+          rgb(63, 150, 135)
+        );
+      }
+
+      * .flex1 {
+        flex: 1;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .column {
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <script type="text/javascript" src="./jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="./shijian.js"></script>
+
+  <body class="flex; column">
+    <!--一级上-->
+    <div
+      style="height: 180px; justify-content: center; align-items: center"
+      class="flex"
+    >
+      <img
+        src="https://ts1.cn.mm.bing.net/th/id/R-C.07d28c0895d1f03262d901878cbbf444?rik=stVXUk7W6KX0bg&riu=http%3a%2f%2fpic.huke88.com%2fvideo%2fcover%2f2017-09-02%2fFA49C82A-5EB2-B2F8-ECDF-DE287FF5899A.gif!%2fformat%2fjpg%2ffw%2f920&ehk=CYRRcVoNCWosCW56nkUdboA2rt6Tg4%2bcyBi0saEIgBU%3d&risl=1&pid=ImgRaw&r=0"
+        alt="gif"
+      />
+    </div>
+    <!--一级中-->
+    <div id="shijian"></div>
+    <!--一级下-->
+    <div class="flex1 flex" style="justify-content: space-evenly">
+      <a href="https://space.bilibili.com/34786453?spm_id_from=333.337.0.0"
+        >--康老师--</a
+      >
+      <a href="https://github.com/Lush-Green/-">--吱嗷赵--</a>
+      <a href="http://www.dmaku.com/jquery/451.html">--时间动画--</a>
+      <a href="https://www.runoob.com/">--菜鸟教程--</a>
+    </div>
+  </body>
+</html>
